@@ -5,7 +5,11 @@
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+<<<<<<< HEAD
   position: static;
+=======
+  position: absolute;
+>>>>>>> 7d17ee20734711d892a20da5cf858515f42ab145
   left: 40%;
   top: 70px;
 }
@@ -31,6 +35,13 @@
   color: #61dafb;
 }
 
+<<<<<<< HEAD
+=======
+.App-Button {
+  font-size: 25px;
+  font-family: sans-serif;
+}
+>>>>>>> 7d17ee20734711d892a20da5cf858515f42ab145
   
 @keyframes App-logo-spin {
   from {
