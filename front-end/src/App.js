@@ -1,16 +1,19 @@
+import { useState } from 'react';
 import logo from './chimp.jpg';
 import './App.css';
-import { Button, Form } from 'bootstrap';
+import PrimerFormulario from './Componentes/PrimerFormulario';
 
 function App() {
+  const [personaNombre, setPersona] = useState ("José Manuel");
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-
+        <img src={logo} className="App-logo" alt="logo"/>
+        <PrimerFormulario
+        personaNombre={personaNombre}/>
       </header>
     </div>
-  );
+  )
 }
 
 export default App;
