@@ -1,4 +1,9 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Chicle&family=Kosugi&family=Silkscreen:wght@400;700&family=Sixtyfour:SCAN@-24&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chicle&family=Kosugi&family=Libre+Barcode+39+Extended&family=Silkscreen:wght@400;700&family=Sixtyfour:SCAN@-24&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Autour+One&family=Chicle&family=Kosugi&family=Libre+Barcode+39+Extended&family=Silkscreen:wght@400;700&family=Sixtyfour:SCAN@-24&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Autour+One&family=Chicle&family=Kosugi&family=Libre+Barcode+39+Extended&family=Nosifer&family=Silkscreen:wght@400;700&family=Sixtyfour:SCAN@-24&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Autour+One&family=Chicle&family=Kosugi&family=Libre+Barcode+39+Extended&family=Nosifer&family=Shippori+Antique&family=Silkscreen:wght@400;700&family=Sixtyfour:SCAN@-24&display=swap');
+.App {  
   text-align: center;
 }
 
@@ -10,28 +15,122 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 1ms linear;
+    animation: App-logo-spin infinite 1s linear;
   }
 }
 
 .App-header {
-  background-color: #a07f24d0;
+  background-color: #ffffff;
   min-height: 100vh;
   display: flex; 
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(20px + 2vmin);
-  color: white;
+  font-size: calc(10px + 2vmin);
+  color: rgb(0, 0, 0);
+  text-align: left;
 }
 
 .App-link {
   color: #61dafb;
 }
 
+.contenedor {
+    position: relative;
+    width: 50%;
+    margin: auto;
+    border: 5px solid black;
+    padding: 0%;
+  }
+
+
+#nombre {
+  font-family: "Shippori Antique", sans-serif;
+  font-weight: 200;
+  font-size: 15px;
+  font-style: normal;
+  text-align: left;
+  display: block;
+  margin-left: 0;
+  margin-bottom: 20px;
+
+}
+#papellido {
+  font-family: "Shippori Antique", sans-serif;
+  font-weight: 200;
+  font-size: 15px;
+  font-style: normal;
+  text-align: left;
+  display: block;
+  margin-left: 0;
+  margin-bottom: 20px;
+
+}
+#sapellido {
+  font-family: "Shippori Antique", sans-serif;
+  font-weight: 200;
+  font-size: 15px;
+  font-style: normal;
+  text-align: left;
+  display: block;
+  margin-left: 0;
+  margin-bottom: 20px;
+
+}
+#contraseña {
+  text-align: left;
+  font-family: "Libre Barcode 39 Extended", system-ui;
+  font-size: 20px;
+  font-weight: 100;
+  font-style: normal;
+  display: block;
+  margin-left: 0;
+  margin-bottom: 20px;
+
+
+}
+#confirmarcontraseña {
+  text-align: left;
+  font-family: "Libre Barcode 39 Extended", system-ui;
+  font-size: 20px;
+  font-weight: 100;
+  font-style: normal;
+  display: block;
+  margin-left: 0;
+  margin-bottom: 20px;
+
+}
+
+label.form-label {
+  font-family: "Shippori Antique", sans-serif;
+  font-style: normal;
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #224106; 
+  border: none; 
+  color: white; 
+  padding: 15px 32px; 
+  text-align: center; 
+  text-decoration: none; 
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer; 
+  border-radius: 12px;
+}
 .App-Button {
   font-size: 25px;
   font-family: sans-serif;
+  margin-top: 20px;
+
 }
   
 @keyframes App-logo-spin {
