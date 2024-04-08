@@ -1,8 +1,8 @@
-import {Button,Col,Row,Form}from 'react-bootstrap';
+import {Col,Button,Form,Row,Card, CardFooter, CardBody}from 'react-bootstrap';
 import { useState } from 'react';
+import './SF.css';
+function SegundoFormulario(personaregistro)  {
 
-function PrimerFormulario(personaregistro)  {
-    
     function Click() {
         console.log(personaregistro);
     }
@@ -60,8 +60,9 @@ function PrimerFormulario(personaregistro)  {
       };
 
     return (
-    <Row>
-        <Col> 
+    <Card>
+        <CardBody> 
+        <Row>
             <Form.Label>Nombre:</Form.Label>
             <input 
             type="text" 
@@ -70,9 +71,8 @@ function PrimerFormulario(personaregistro)  {
             value={nombre}
             onChange={cambiarNombre}
             ></input>
-            
-        </Col>
-        <Col> 
+        </Row> 
+        <Row> 
             <Form.Label>Primer Apellido:</Form.Label>
             <input 
             type="text" 
@@ -81,9 +81,8 @@ function PrimerFormulario(personaregistro)  {
             value={papellido}
             onChange={cambiarpapellido}
             ></input>
-
-        </Col>
-        <Col> 
+        </Row>
+        <Row>   
             <Form.Label>Segundo Apellido:</Form.Label>
             <input 
             type="text" 
@@ -92,18 +91,18 @@ function PrimerFormulario(personaregistro)  {
             value={sapellido}
             onChange={cambiarsapellido}
             ></input>
-        </Col>
-        <Col> 
+        </Row>
+        <Row> 
             <Form.Label>Nombre de usuario:</Form.Label>
             <input 
             type="text" 
             id="sapellido" 
             name="sapellido" 
-            value={sapellido}
+            value={usuario}
             onChange={cambiarusuario}
             ></input>
-        </Col>
-        <Col> 
+        </Row>
+        <Row> 
             <Form.Label>Contraseña:</Form.Label>
             <input 
             type="text" 
@@ -112,8 +111,8 @@ function PrimerFormulario(personaregistro)  {
             value={contra}
             onChange={cambiarcontra}
             ></input>
-        </Col>
-        <Col> 
+        </Row>
+        <Row> 
             <Form.Label>Confirmar Contraseña:</Form.Label>
             <input 
             type="text" 
@@ -122,11 +121,12 @@ function PrimerFormulario(personaregistro)  {
             value={ccontra}
             onChange={cambiarccontra}
             ></input>
-        </Col>
-        <Col>
+          </Row>
+        </CardBody> 
+        <CardFooter>
             <Button onClick={guardarClick}>Guardar</Button>
-        </Col>
-    </Row>
+        </CardFooter>
+    </Card>
     );
 }
-export default PrimerFormulario;
+export default SegundoFormulario;

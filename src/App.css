@@ -10,7 +10,6 @@
 .App-logo {
   height: 40vmin;
   pointer-events: none;
-  position: static;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -20,8 +19,8 @@
 }
 
 .App-header {
+  position: static;
   background-color: #ffffff;
-  min-height: 100vh;
   display: flex; 
   flex-direction: column;
   align-items: center;
@@ -35,14 +34,11 @@
   color: #61dafb;
 }
 
-.contenedor {
-    position: relative;
-    width: 50%;
-    margin: auto;
-    border: 5px solid black;
-    padding: 0%;
-  }
 
+#PrimerFormulario {
+  position: static;
+
+}
 
 #nombre {
   font-family: "Shippori Antique", sans-serif;
@@ -53,6 +49,7 @@
   display: block;
   margin-left: 0;
   margin-bottom: 20px;
+  
 
 }
 #papellido {
@@ -77,6 +74,18 @@
   margin-bottom: 20px;
 
 }
+
+#usuario {
+  font-family: "Shippori Antique", sans-serif;
+  font-weight: 200;
+  font-size: 15px;
+  font-style: normal;
+  text-align: left;
+  display: block;
+  margin-left: 0;
+  margin-bottom: 20px;
+}
+
 #contraseña {
   text-align: left;
   font-family: "Libre Barcode 39 Extended", system-ui;
@@ -107,15 +116,15 @@ label.form-label {
   font-size: 20px;
   color: rgb(0, 0, 0);
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  position: relative;
+  color: #000000;
 }
 
 button {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  background-color: #224106; 
+  background-color: #000000; 
   border: none; 
   color: white; 
   padding: 15px 32px; 
@@ -130,6 +139,7 @@ button {
   font-size: 25px;
   font-family: sans-serif;
   margin-top: 20px;
+  position: relative;
 
 }
   
