@@ -13,7 +13,6 @@ function App() {
       <div className="titulo">
       </div>
       <div className="App-header">
-        <img src={logo} className="App-logo" alt="logo"/>
         </div>
         <div className="logo">
         </div>

@@ -1,6 +1,9 @@
-import {Col,Button,Form,Row,Card, CardFooter, CardBody}from 'react-bootstrap';
+import {Col,Button,Form,Row,Card, CardFooter, CardBody,CardHeader}from 'react-bootstrap';
 import { useState } from 'react';
 import './SF.css';
+import 'bootstrap/dist/css/bootstrap.min.css'
+import logo from '../chimp.jpg';
+
 function SegundoFormulario(personaregistro)  {
 
     function Click() {
@@ -60,73 +63,80 @@ function SegundoFormulario(personaregistro)  {
       };
 
     return (
-    <Card>
-        <CardBody> 
-        <Row>
-            <Form.Label>Nombre:</Form.Label>
-            <input 
-            type="text" 
-            id="nombre" 
-            name="nombre" 
-            value={nombre}
-            onChange={cambiarNombre}
-            ></input>
-        </Row> 
-        <Row> 
-            <Form.Label>Primer Apellido:</Form.Label>
-            <input 
-            type="text" 
-            id="papellido" 
-            name="papellido" 
-            value={papellido}
-            onChange={cambiarpapellido}
-            ></input>
-        </Row>
-        <Row>   
-            <Form.Label>Segundo Apellido:</Form.Label>
-            <input 
-            type="text" 
-            id="sapellido" 
-            name="sapellido" 
-            value={sapellido}
-            onChange={cambiarsapellido}
-            ></input>
-        </Row>
-        <Row> 
-            <Form.Label>Nombre de usuario:</Form.Label>
-            <input 
-            type="text" 
-            id="sapellido" 
-            name="sapellido" 
-            value={usuario}
-            onChange={cambiarusuario}
-            ></input>
-        </Row>
-        <Row> 
-            <Form.Label>Contraseña:</Form.Label>
-            <input 
-            type="text" 
-            id="contraseña" 
-            name="contraseña" 
-            value={contra}
-            onChange={cambiarcontra}
-            ></input>
-        </Row>
-        <Row> 
-            <Form.Label>Confirmar Contraseña:</Form.Label>
-            <input 
-            type="text" 
-            id="confirmarcontraseña" 
-            name="confirmarcontraseña" 
-            value={ccontra}
-            onChange={cambiarccontra}
-            ></input>
-          </Row>
-        </CardBody> 
-        <CardFooter>
+      <Form>
+        <Card>
+          <CardHeader>
+            <Row>
+              <img src={logo} className="App-logo" alt="logo" />
+            </Row>
+          </CardHeader>
+          <CardBody> 
+            <Row>
+              <Form.Label>Nombre:</Form.Label>
+              <input 
+              type="text" 
+              id="nombre" 
+              name="nombre" 
+              value={nombre}
+              onChange={cambiarNombre}
+              ></input>
+            </Row> 
+            <Row> 
+              <Form.Label>Primer Apellido:</Form.Label>
+              <input 
+              type="text" 
+              id="papellido" 
+              name="papellido" 
+              value={papellido}
+              onChange={cambiarpapellido}
+              ></input>
+            </Row>
+            <Row>   
+              <Form.Label>Segundo Apellido:</Form.Label>
+              <input 
+              type="text" 
+              id="sapellido" 
+              name="sapellido" 
+              value={sapellido}
+              onChange={cambiarsapellido}
+              ></input>
+            </Row>
+            <Row> 
+              <Form.Label>Nombre de usuario:</Form.Label>
+              <input 
+              type="text" 
+              id="sapellido" 
+              name="sapellido" 
+              value={usuario}
+              onChange={cambiarusuario}
+              ></input>
+            </Row>
+            <Row> 
+              <Form.Label>Contraseña:</Form.Label>
+              <input 
+              type="text" 
+              id="contraseña" 
+              name="contraseña" 
+              value={contra}
+              onChange={cambiarcontra}
+              ></input>
+            </Row>
+            <Row> 
+              <Form.Label>Confirmar Contraseña:</Form.Label>
+              <input 
+              type="text" 
+              id="confirmarcontraseña" 
+              name="confirmarcontraseña" 
+              value={ccontra}
+              onChange={cambiarccontra}
+              ></input>
+            </Row>
+          </CardBody> 
+          <CardFooter>
             <Button onClick={guardarClick}>Guardar</Button>
-        </CardFooter>
-    </Card>
+          </CardFooter>
+        </Card>
+      </Form>
     );
 }
 export default SegundoFormulario;
