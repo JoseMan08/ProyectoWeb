@@ -1,7 +1,7 @@
 import 'react-data-grid/lib/styles.css';
 import DataGrid from 'react-data-grid';
 
-const usuarios=[
+const usuarios = [
   {
     "id": 1,
     "Nombre": "Juan",
@@ -114,11 +114,6 @@ const columns = [
 ];
 
 
-const rows = [
-  { id: 0, title: 'Id' },
-  { id: 1, title: 'nombre' },
-
-];
 
 function Tablausuario() {
   return <DataGrid columns={columns} rows={usuarios} />;
