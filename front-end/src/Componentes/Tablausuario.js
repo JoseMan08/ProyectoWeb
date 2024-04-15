@@ -105,7 +105,11 @@ const usuarios = [
 
 const columns = [
   { key: 'id', name: 'ID' },
+<<<<<<< HEAD
   { key: 'Nombre', name: 'NOMBRE' },
+=======
+  { key: 'nombre', name: 'NOMBRE' },
+>>>>>>> 88ab96754a6d81a03a420ab11c99b6b764e4077a
   { key: 'PrimerApellido', name: 'PRIMER APELLIDO' },
   { key: 'SegundoApellido', name: 'Segundo Apellido' },
   { key: 'Correo', name: 'CORREO' },
