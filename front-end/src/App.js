@@ -1,19 +1,26 @@
+import { useState } from 'react';
 import logo from './chimp.jpg';
 import './App.css';
-import { Button, Form } from 'react-bootstrap';
+import Cambiar from './Componentes/Cambiar';
+
 
 function App() {
+  const [personaregistro] = useState();
+
   return (
+
     <div className="App">
-      <header className="App-header">
+      <div className="titulo">
         <img src={logo} className="App-logo" alt="logo" />
-        <Form.Label>Nombre : </Form.Label>
-        <Form.Control type="text"></Form.Control>
-        <br />
-        <Button className="App-Button">Guardar</Button>
-      </header>
+      </div>
+      <div className="App-header">
+      </div>
+      <div className="logo">
+      </div>
+      <Cambiar/>
     </div>
-  );
+
+  )
 }
 
 export default App;
