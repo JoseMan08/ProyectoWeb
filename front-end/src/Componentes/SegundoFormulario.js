@@ -1,27 +1,22 @@
 import { Button, Form, Row, Card, CardFooter, CardBody } from 'react-bootstrap';
 import { useState } from 'react';
 import './SF.css';
-<<<<<<< HEAD
 import Cambiar from './Cambiar';
-=======
->>>>>>> 88ab96754a6d81a03a420ab11c99b6b764e4077a
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 function SegundoFormulario(personaregistro) {
 
+
   function Click() {
-<<<<<<< HEAD
     <Cambiar boolean = {false} />
     console.log(personaregistro);
     window.location.href = window.location.href;
   }
 
 
-=======
-    console.log(personaregistro);
+    console.log(personaregistro);{
   }
 
->>>>>>> 88ab96754a6d81a03a420ab11c99b6b764e4077a
   const [nombre, setNombre] = useState("");
   const [papellido, setpapellido] = useState("");
   const [sapellido, setsapellido] = useState("");
@@ -69,7 +64,7 @@ function SegundoFormulario(personaregistro) {
 
   };
 
-  return (
+  return ( 
     <Form>
       <Card>
         <CardBody>
@@ -136,11 +131,8 @@ function SegundoFormulario(personaregistro) {
         </CardBody>
         <CardFooter>
           <Button onClick={guardarClick}>Guardar</Button>
-<<<<<<< HEAD
           
           <Button onClick={Click}>Cancelar</Button>
-=======
->>>>>>> 88ab96754a6d81a03a420ab11c99b6b764e4077a
         </CardFooter>
       </Card>
     </Form>
